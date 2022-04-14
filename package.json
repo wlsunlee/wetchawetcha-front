@@ -24,13 +24,15 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "sass": "^1.49.9",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "pm2": "^5.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "distribute": "npm i && npm run build && pm2 serve build 3000 --name <project-front> --spa"
   },
   "eslintConfig": {
     "extends": [
